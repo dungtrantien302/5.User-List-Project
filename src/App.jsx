@@ -77,15 +77,12 @@ export default function App() {
 
   return (
     <>
-      <h1>List User</h1>
-      {isLoading ?
-        (<h2>Loading...</h2>)
-        : (<ul>
-          {users.map(user => {
-            return <User key={user.id} name={user.name} />
-          })}
-        </ul>)
-      }
+      <h1>User List</h1>
+      <ul>
+        {users.map(user => {
+          return <User key={user.id} name={user.name} email={user.email} />
+        })}
+      </ul>
     </>
   )
 }

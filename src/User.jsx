@@ -1,5 +1,5 @@
-export function User({ name }) {
+export function User({ name, email }) {
     return (
-        <li>{name}</li>
+        <li>name: {name}, email: {email}</li>
     )
 }
