@@ -1,6 +1,5 @@
 //1
-import { useEffect } from 'react'
-import { useState } from 'react'
+import { useState, useEffect } from 'react'
 import { User } from './User'
 
 export default function App() {
@@ -88,4 +87,3 @@ export default function App() {
 //     </>
 //   )
 // }
-
