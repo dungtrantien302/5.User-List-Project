@@ -31,7 +31,7 @@ export default function App() {
       <h1>User List</h1>
       <ul>
         {users.map(user => {
-          return <User key={user.id} name={user.name} />
+          return <User key={user.id} name={user.name} email={user.email} />
         })}
       </ul>
     </>
