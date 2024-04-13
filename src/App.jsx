@@ -25,11 +25,13 @@ export default function App() {
 
   }, [])
 
-  return (
+  return isLoading ? (
+    <h1>Loading...</h1>
+  ) : (
     <>
       <h1>User List</h1>
       <ul>
-        {users.map(user => {
+        {users.map((user) => {
           return <User key={user.id} name={user.name} />
         })}
       </ul>
